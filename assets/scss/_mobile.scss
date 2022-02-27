@@ -1,0 +1,61 @@
+/* MOBILE FIRST */
+/* Smartphone */
+@media (max-width: 480px) {
+    body {
+        height: 100vh;
+    }
+
+    nav {
+        background-image: linear-gradient(goldenrod, #f52307);
+        height: 230px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .menu {
+        margin: 10px;
+        border-radius: 5px;
+        background: white;
+        padding: 6px;
+    }
+
+    main {
+        background-color: goldenrod;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    h3 {
+        color: white;
+    }
+
+    .gallery {
+        img {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 2px;
+            width: 150px;
+        }
+    }
+
+    .pie {
+        text-align: center;
+    }
+
+    /* Banner */
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Articulos de galeria */
+    article {
+        text-align: center;
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+}

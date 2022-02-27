@@ -1,0 +1,322 @@
+/* selector global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Be Vietnam Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+/* nombre de areas */
+header {
+  grid-area: cabeza;
+  padding: 10px;
+}
+
+footer {
+  grid-area: pie;
+  padding: 10px;
+}
+
+nav {
+  grid-area: menu;
+  padding: 10px;
+}
+
+.p1 {
+  grid-area: parrafo1;
+  padding: 10px;
+}
+
+.text {
+  grid-area: texto;
+  padding: 10px;
+}
+
+.gallery {
+  grid-area: galleria;
+  padding: 10px;
+}
+
+/* GRIDS POR AREAS*/
+#gridAreas {
+  display: grid;
+  grid-template-areas: "cabeza" "menu" "p1" "text" "gallery" "pie";
+  /*dimensiones */
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 3fr 2fr 1fr 1fr 1fr;
+  grid-row-gap: 0;
+}
+
+/* MOBILE FIRST */
+/* Smartphone */
+@media (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
+
+  nav {
+    background-image: linear-gradient(goldenrod, #f52307);
+    margin: 0%;
+  }
+
+  .menu {
+    margin: 10px;
+    border-radius: 5px;
+    background: white;
+    padding: 6px;
+    
+  }
+
+  main {
+    background-color: goldenrod;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .gallery img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    width: 150px;
+  }
+
+  .pie {
+    text-align: center;
+  }
+
+  /* Banner */
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Articulos de galeria */
+  article {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+  }
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px) {
+  body {
+    height: 100vh;
+  }
+
+  nav {
+    background-image: linear-gradient(goldenrod, #f52307);
+    margin: 0%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+   .menu {
+   
+    margin: 10px;
+    border-radius: 5px;
+    background: white;
+    padding: 6px;
+  } 
+
+  .menu1
+  {
+    
+  }
+
+  main {
+    background-color: goldenrod;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .gallery img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 2px;
+    width: 150px;
+  }
+
+  .pie {
+    text-align: center;
+  }
+
+  /* Banner */
+  .banner {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+}
+nav {
+  background-color: tomato;
+  margin: 0%;
+}
+
+main {
+  background-color: goldenrod;
+}
+
+.menu1 {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.menu {
+  display: inline;
+  margin: 10px;
+  border-radius: 5px;
+  background: white;
+  padding: 6px;
+}
+
+.text {
+  margin: 20px;
+  padding-left: 40px;
+}
+
+.p1 img {
+  max-width: 1100px;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+.gallery img {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 2px;
+  width: 150px;
+}
+
+h1 {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 100px;
+  color: white;
+  display: none;
+}
+
+h3 {
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 100px;
+  color: white;
+  display: none;
+}
+
+section .gallery {
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 180px;
+  display: inline-block;
+}
+
+.gallery img {
+  margin-right: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.pie {
+  background-color: gray;
+  text-align: center;
+  padding: 30px;
+  display: block;
+}
+
+footer p {
+  color: tomato;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-width: 900px;
+}
+
+.p1 .text .gallery {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contenedor {
+  display: flex;
+}
+
+.contenedor div {
+  width: 50%;
+}
+
+.contenedor div article .gallery {
+  display: flex;
+}
+
+.p2 img {
+  max-width: 300px;
+  min-width: 500px;
+  margin-right: 20px;
+  padding-top: 40px;
+}
+
+.section3 img {
+  padding-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.colum img {
+  position: relative;
+  float: left;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery p {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section3 {
+  margin-right: 20px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+h2 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.minidesc {
+  width: 200px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
